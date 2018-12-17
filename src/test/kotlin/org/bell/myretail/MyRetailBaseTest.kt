@@ -22,6 +22,6 @@ abstract class MyRetailBaseTest(val initializeTestData:Boolean = true){
     }
 
     companion object{
-        val TEST_PRICE_1 = PricedProduct(13860428, 929)
+        val TEST_PRICE_1 = PricedProduct("13860428", 929)
     }
 }
