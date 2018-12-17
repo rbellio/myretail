@@ -1,5 +1,6 @@
 package org.bell.myretail
 
+import org.bell.myretail.model.Price
 import org.bell.myretail.model.PricedProduct
 import org.bell.myretail.repository.PriceProductRepository
 import org.junit.Before
@@ -22,6 +23,6 @@ abstract class MyRetailBaseTest(val initializeTestData:Boolean = true){
     }
 
     companion object{
-        val TEST_PRICE_1 = PricedProduct("13860428", 929)
+        val TEST_PRICE_1 = PricedProduct("13860428", Price(9.29.toBigDecimal(), "USD"))
     }
 }

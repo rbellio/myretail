@@ -22,7 +22,7 @@ class ProductServiceTest : MyRetailBaseTest() {
 
         //assertEquals("Product IDs should match", TEST_PRODUCTS[0], product.productId)
         assertEquals("Product Names should match", expectedProductName, product.name)
-        assertEquals("Product price does not match", 929, product.price)
+        assertEquals("Product price does not match", "9.29", product.current_price.value)
         logger.info("End GetTargetProductTest")
     }
 
